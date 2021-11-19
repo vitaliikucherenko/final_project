@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing Framework">
+    <test name="Authentication tests">
+        <groups>
+            <run>
+                <include name="authentication"/>
+                <include name="validation"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.nixsolutions.FinalTestMain"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="API test users">
+        <groups>
+            <run>
+                <include name="api_user"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.nixsolutions.FinalTestMain"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="API test task and company">
+        <groups>
+            <run>
+                <include name="api_user_with_task"/>
+                <include name="api_company"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.nixsolutions.FinalTestMain"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
